@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de encuesta</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">
+          Contacto
+        </h1>
+        <p id="description">
+          ¿Alguna pregunta? ¡Estamos aquí para ayudarte!
+         </p>
+         <form id="survey-form">
+          <div class="form-section">
+            <label  id="name-label" for="name">Nombre</label>
+            <input 
+              type="text"
+              name="name"
+              id="name"
+              class="form-box"
+              placeholder="Escribe tu nombre"
+              required
+            />
+          </div>
+          
+          <div class="form-section">
+            <label
+              for="email"
+              id="email-label"
+            >
+              Email
+            </label>
+            <input 
+              id="email" 
+              class="form-box"
+              type="email"
+              name="email"
+              placeholder="Escribe tu email"
+              required
+            />
+          </div>
+          <div class="form-section">
+            <label
+              for="age"
+              id="number-label"
+            >
+              Edad
+            </label>
+            <input 
+              id="age"
+              class="form-box"
+              type="number"
+              min="18"
+              max="99"
+              name="age"
+              placeholder="Edad"
+              required
+            />
+          </div>
+          <div class="form-section">
+            <p>
+              ¿Cual es tu ocupacion actual?
+            </p>
+            <select 
+              id="dropdown"
+              class="form-box"
+              name="ocupation"
+            >
+              <option disabled selected >
+                Selecciona tu ocupacion actual
+              </option>
+              <option>
+                Empleado full-time
+              </option>
+              <option>
+                Empleado part-time
+              </option>
+              <option>
+                Estudiante
+              </option>
+              <option>
+                Desempleado
+              </option>
+              <option>
+                Otro
+              </option>
+            </select>
+          </div>
+          <div class="form-section">
+            <p>
+              ¿Como nos conociste?
+            </p>
+            <label>
+              <input 
+                id="radio" 
+                name="contact" 
+                type="radio"
+                value="Facebook"
+                checked
+              />
+              Facebook
+            </label>
+            <label>
+              <input 
+                id="radio" 
+                name="contact" 
+                type="radio"
+                value="Instagram"
+              />
+              Instagram
+            </label>
+            <label>
+              <input 
+                id="radio" 
+                name="contact" 
+                type="radio"
+                value="Twitter"
+              />
+              Twitter
+            </label>
+          </div>
+          <div class="form-section">
+            <p>
+              ¿Cual area te interesa estudiar?
+            </p>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="human-studies"
+               type="checkbox"
+              />
+              Humanidades
+            </label>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="social-sciences"
+               type="checkbox"
+              />
+              Ciencias Sociales
+            </label>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="art"
+               type="checkbox"
+              />
+              Arte
+            </label>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="music"
+               type="checkbox"
+              />
+              Musica
+            </label>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="exact-sciences"
+               type="checkbox"
+              />
+              Ciencias Exactas
+            </label>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="health"
+               type="checkbox"
+              />
+              Salud
+            </label>
+            <label class="check-box">
+              <input
+               name="study-area"
+               value="engineer"
+               type="checkbox"
+              />
+              Ingenieria
+            </label>
+          </div>
+          <div class="form-group">
+           <p>Puedes dejarnos aqui tu consulta</p>
+           <textarea
+             id="comment"
+             class="textarea"
+             name="comment"
+             placeholder="Escribe tu comentario aqui..."
+           ></textarea>
+         </div>
+          <div class="form-section">
+            <button 
+              type="submit" 
+              id="submit"
+              class="button"
+              
+            > 
+            Enviar
+            </button>
+          </div>
+        </form>
+      </div>       
+</body>
+</html>
